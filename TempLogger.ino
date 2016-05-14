@@ -1,4 +1,4 @@
-Arduino Mega 2560
+// Arduino Mega 2560
 
 // Tepmerature chip DHT11
 #include <DHT.h> // Arduino library
