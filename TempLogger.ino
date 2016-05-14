@@ -1,5 +1,7 @@
-// Tepmerature chip
-#include <DHT.h> // https://github.com/ADiea/libDHT
+Arduino Mega 2560
+
+// Tepmerature chip DHT11
+#include <DHT.h> // Arduino library
 #define DHTPIN 30
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
@@ -12,13 +14,13 @@ DS1302RTC RTC(40, 41, 42);
 #include <Time.h>      // http://playground.arduino.cc/Code/Time
 tmElements_t tm;
 
-// MicroSD reader: SD library https://github.com/adafruit/SD
+// MicroSD reader: Arduino SD library
 #include <SPI.h>
 #include <SD.h>
 const int chipSelect = 53;
 File dataFile;
 
-// Multi-function shield
+// Arduino Multi-function shield (for displaing temperature)
 /* Define shift register pins used for seven segment display */
 #define LATCH_DIO 4
 #define CLK_DIO 7
